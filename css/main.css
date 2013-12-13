@@ -1,0 +1,228 @@
+/*---- Begin Body ----*/
+body {
+	width: 80%;
+	max-width: 960px;
+	margin: 0px auto;
+	font: 100%/1.0 'Gruppo', Verdana, Geneva, sans-serif;
+	color: #fff;
+	background: #404044 url("../images/bg.jpg");
+}
+@font-face {
+	font-family: "EVE Alpha";
+	src: url("../fonts/eve.ttf") format("truetype");
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: "EVE Alpha";
+	text-shadow: 1px 2px 3px #FFF;
+}
+a:link, a:visited {
+	color: #fff;
+}
+/*---- End of Body ----*/
+/*---- Begin Header ----*/
+.logo {
+	display: block;
+	margin: auto;
+	text-decoration: none;
+	height: 100%;
+	width: 100%;
+	max-height: 225px;
+	max-width: 300px;
+	margin-top: -50px;
+	margin-bottom: -50px;
+}
+#navigation {
+	text-align: center;
+}
+.navbar {
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0;
+	width: 90%;
+	max-width: 710px; /* !-Collapses when zooming out-! */
+}
+.navbar li {
+	list-style: none;
+	float: left;
+}
+.navbar li a {
+	font-family: "EVE Alpha";
+	font-size: 0.75em; /*12px*/
+	font-weight: bold;
+	display: block;
+	text-align: center;
+	height: 30px;
+	width: 140px;
+	line-height: 33px;
+	color: #fff;
+	
+	text-decoration: none;
+	text-shadow: 0 1px 0 #000;
+	
+	border-right: 1px solid #323235;
+	border-left: 1px solid rgba(255, 255, 255, 0.2);
+	
+	background-image: -moz-linear-gradient(top, #535357, #3c3c3f);
+    background-image: -ms-linear-gradient(top, #535357, #3c3c3f);
+    background-image: -webkit-linear-gradient(top, #535357, #3c3c3f);
+    background-image: linear-gradient(top, #535357, #3c3c3f);
+           
+    -webkit-box-shadow: inset 0 1px 0px rgba(255, 255, 255, 0.2), 0 1px 0px #292929;
+    -moz-box-shadow: inset 0 1px 0px rgba(255, 255, 255, 0.2), 0 1px 0px #292929;
+    box-shadow: inset 0 1px 0px rgba(255, 255, 255, 0.2), 0 1px 0p
+}
+.navbar li a:hover {
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+    background-image: -moz-linear-gradient(top, #565658, #313132);
+    background-image: -ms-linear-gradient(top, #565658, #313132);
+    background-image: -webkit-linear-gradient(top, #565658, #313132);
+    background-image: linear-gradient(top, #565658, #313132);
+           
+    -webkit-box-shadow: inset 0 1px 0px rgba(255, 255, 255, 0.2), 0 1px 0px #292929;
+    -moz-box-shadow: inset 0 1px 0px rgba(255, 255, 255, 0.2), 0 1px 0px #292929;
+    box-shadow: inset 0 1px 0px rgba(255, 255, 255, 0.2), 0 1px 0px #292929;
+}
+ 
+.navbar li a:active  {
+    background: #414142;
+    -webkit-box-shadow: inset 0 2px 3px rgba(0,0,0, 0.2);
+    -moz-box-shadow: inset 0 2px 3px rgba(0,0,0, 0.2);
+    box-shadow: inset 0 2px 3px rgba(0,0,0, 0.2);
+}
+/*----End Header ----*/
+/*--- Begin Main Content ---*/
+#story {
+	margin-top: 30px;
+	text-align: center;
+}
+#story img {
+	float: left;
+	border: 1px solid #999;
+	height: 100%;
+	width: 100%;
+	max-height: 150px;
+	max-width: 150px;
+	margin-top: 5px;
+	margin-left: 5px;
+	margin-right: 10px;
+}
+#story p, #corporation p {
+	line-height: 110%;
+	background-color: #fff;
+	background: rgb(100, 100, 100); /* Fall-back for browsers that don't support rgba */
+	background: rgba(100, 100, 100, .3);
+	text-align: justify;
+	text-indent: 0px;
+}
+#corporation {
+	text-align: center;
+}
+#corporation p {
+	text-align: justify;
+	background-color: #fff;
+	background: rgb(100, 100, 100); /* Fall-back for browsers that don't support rgba */
+	background: rgba(100, 100, 100, .3);
+	column-count: 2;
+	column-gap: 20px;
+	-moz-column-count: 2;
+	-moz-column-gap: 20px;
+	-webkit-column-count: 2;
+	-webkit-column-gap: 20px;
+}
+.gallery {	
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+	text-align: center;	
+}
+.feature {
+	max-width: 31%;
+	float: left;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	margin-left: 1px;
+	margin-right: 1px;
+	border: 5px solid #999;
+}
+.feature img {
+	max-width: 100%;
+}
+
+/*--- End Main Content ---*/
+/*---- Begin Footer ----*/
+.disclaimer {
+	float: left;
+	position: relative;
+    text-align: center;
+	font-size: small;
+	width: 100%;
+}
+/*---- End Footer ----*/
+/*---- Media Queries ----*/
+@media screen and (max-width: 770px) {
+body {
+	width: 90%;
+}
+h2 {
+	font-size: large;
+}
+h4 {
+	font-size: small;
+}
+#story img {
+	height: 125px;
+	width: 125px;
+}
+p {
+	font-size: medium;
+}
+.feature {
+	/*max-width: 31%;*/
+	border: 3px solid #999;
+}
+}
+
+@media screen and (max-width: 480px) {
+body {
+	width: 95%;
+}
+h2 {
+	font-size: medium;
+	text-shadow: 0px 0px 0px;
+	letter-spacing: 1px;
+}
+h4 {
+	font-size: x-small;
+	text-shadow: 0px 0px 0px;
+	letter-spacing: 1px;
+}
+#story img {
+	height: 100px;
+	width: 100px;
+}
+p {
+	font-size: small;	
+}
+#corporation p {
+	column-count: 1;
+	-moz-column-count: 1;
+	-webkit-column-count: 1;
+}
+.feature {
+	max-width: 48%;
+	border: 2px solid #999;
+}
+}
+
+@media screen and (max-width: 400px) { /* browser window may not go this narrow, change it to 400px wide so you can see it work */
+.logo {
+	display: none;
+}
+#story img {
+	height: 75px;
+	width: 75px;
+}
+.feature {
+	border: 1px solid #999;
+}
