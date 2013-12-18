@@ -40,7 +40,7 @@ a:link, a:visited {
 	margin-right: auto;
 	padding: 0;
 	width: 90%;
-	max-width: 710px; /* !-Collapses when zooming out-! */
+	max-width: 710px;
 }
 .navbar li {
 	list-style: none;
@@ -56,39 +56,33 @@ a:link, a:visited {
 	width: 140px;
 	line-height: 33px;
 	color: #fff;
-	
 	text-decoration: none;
 	text-shadow: 0 1px 0 #000;
-	
 	border-right: 1px solid #323235;
 	border-left: 1px solid rgba(255, 255, 255, 0.2);
-	
 	background-image: -moz-linear-gradient(top, #535357, #3c3c3f);
-    background-image: -ms-linear-gradient(top, #535357, #3c3c3f);
-    background-image: -webkit-linear-gradient(top, #535357, #3c3c3f);
-    background-image: linear-gradient(top, #535357, #3c3c3f);
-           
-    -webkit-box-shadow: inset 0 1px 0px rgba(255, 255, 255, 0.2), 0 1px 0px #292929;
-    -moz-box-shadow: inset 0 1px 0px rgba(255, 255, 255, 0.2), 0 1px 0px #292929;
-    box-shadow: inset 0 1px 0px rgba(255, 255, 255, 0.2), 0 1px 0p
+	background-image: -ms-linear-gradient(top, #535357, #3c3c3f);
+	background-image: -webkit-linear-gradient(top, #535357, #3c3c3f);
+	background-image: linear-gradient(top, #535357, #3c3c3f);
+	-webkit-box-shadow: inset 0 1px 0px rgba(255, 255, 255, 0.2), 0 1px 0px #292929;
+	-moz-box-shadow: inset 0 1px 0px rgba(255, 255, 255, 0.2), 0 1px 0px #292929;
+	box-shadow: inset 0 1px 0px rgba(255, 255, 255, 0.2), 0 1px 0p
 }
 .navbar li a:hover {
-    text-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
-    background-image: -moz-linear-gradient(top, #565658, #313132);
-    background-image: -ms-linear-gradient(top, #565658, #313132);
-    background-image: -webkit-linear-gradient(top, #565658, #313132);
-    background-image: linear-gradient(top, #565658, #313132);
-           
-    -webkit-box-shadow: inset 0 1px 0px rgba(255, 255, 255, 0.2), 0 1px 0px #292929;
-    -moz-box-shadow: inset 0 1px 0px rgba(255, 255, 255, 0.2), 0 1px 0px #292929;
-    box-shadow: inset 0 1px 0px rgba(255, 255, 255, 0.2), 0 1px 0px #292929;
+	text-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+	background-image: -moz-linear-gradient(top, #565658, #313132);
+	background-image: -ms-linear-gradient(top, #565658, #313132);
+	background-image: -webkit-linear-gradient(top, #565658, #313132);
+	background-image: linear-gradient(top, #565658, #313132);
+	-webkit-box-shadow: inset 0 1px 0px rgba(255, 255, 255, 0.2), 0 1px 0px #292929;
+	-moz-box-shadow: inset 0 1px 0px rgba(255, 255, 255, 0.2), 0 1px 0px #292929;
+	box-shadow: inset 0 1px 0px rgba(255, 255, 255, 0.2), 0 1px 0px #292929;
 }
- 
-.navbar li a:active  {
-    background: #414142;
-    -webkit-box-shadow: inset 0 2px 3px rgba(0,0,0, 0.2);
-    -moz-box-shadow: inset 0 2px 3px rgba(0,0,0, 0.2);
-    box-shadow: inset 0 2px 3px rgba(0,0,0, 0.2);
+.navbar li a:active {
+	background: #414142;
+	-webkit-box-shadow: inset 0 2px 3px rgba(0,0,0, 0.2);
+	-moz-box-shadow: inset 0 2px 3px rgba(0,0,0, 0.2);
+	box-shadow: inset 0 2px 3px rgba(0,0,0, 0.2);
 }
 /*----End Header ----*/
 /*--- Begin Main Content ---*/
@@ -154,11 +148,11 @@ table.center {
 	margin-left: auto;
 	margin-right: auto;
 }
-.gallery {	
+.gallery {
 	margin-left: auto;
 	margin-right: auto;
 	width: 90%;
-	text-align: center;	
+	text-align: center;
 }
 .feature {
 	max-width: 31%;
@@ -175,12 +169,29 @@ table.center {
 #subscribe h4 {
 	text-align: center;
 }
+#subscribe {
+	margin: auto;
+	width: 60%;
+}
+#subscribe label {
+	width: 8em;
+	float: left;
+	text-align: right;
+	margin-right: 0.5em;
+	display: block;
+}
+#promo {
+	margin-left: 13em;
+}
+.button {
+	margin-left: 13em;
+}
 /*--- End Main Content ---*/
 /*---- Begin Footer ----*/
 .disclaimer {
 	float: left;
 	position: relative;
-    text-align: center;
+	text-align: center;
 	font-size: small;
 	width: 100%;
 }
@@ -208,8 +219,7 @@ p {
 	border: 3px solid #999;
 }
 }
-
-@media screen and (max-width: 480px) {
+ @media screen and (max-width: 480px) {
 body {
 	width: 95%;
 }
@@ -228,7 +238,7 @@ h4 {
 	width: 100px;
 }
 p {
-	font-size: small;	
+	font-size: small;
 }
 #corporation p {
 	column-count: 1;
@@ -240,8 +250,7 @@ p {
 	border: 2px solid #999;
 }
 }
-
-@media screen and (max-width: 400px) { /* browser window may not go this narrow, change it to 400px wide so you can see it work */
+ @media screen and (max-width: 400px) { /* browser window may not go this narrow, change it to 400px wide so you can see it work */
 .logo {
 	display: none;
 }
